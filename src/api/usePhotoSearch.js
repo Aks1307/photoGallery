@@ -47,7 +47,7 @@ function usePhotoSearch(pageNumber,query) {
           url: "https://www.flickr.com/services/rest",
           params: {
             method: "flickr.photos.search",
-            api_key: "30f016f5fe1c1fa8edef09c4d9945381",
+            api_key: process.env.REACT_APP_API_KEY,
             format: "json",
             nojsoncallback: 1,
             per_page: 10,
