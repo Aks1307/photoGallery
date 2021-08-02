@@ -26,7 +26,7 @@ function usePhotoLoad(pageNumber) {
           url: "https://www.flickr.com/services/rest",
           params: {
             method: "flickr.photos.getRecent",
-            api_key: process.env.REACT_APP_API_KEY,
+            api_key: "30f016f5fe1c1fa8edef09c4d9945381",
             format: "json",
             nojsoncallback: 1,
             per_page: 10,

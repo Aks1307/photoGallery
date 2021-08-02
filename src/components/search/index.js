@@ -46,10 +46,10 @@ Search.InputBox = function SearchInputBox({children,setQuery,...restProps}){
 
     return <InputDiv>
         <Input  placeholder="Search Image" onBlur={e=> setFocus(false)} onFocus={e => setFocus(true)} value={value} onChange={e => handleChange(e)} {...restProps}>{children}</Input>
-        
+        <div style={{display:'flex',justifyContent:'center'}}>
         <Button  background = "green" onClick={e => saveToLoalStorage(value)}>Search</Button>
-        <Button  onClick={() =>  localStorage.removeItem("photoSeach")} padding = "10px" background="red">Clear Search History</Button>
-        
+        <Button  onClick={() =>  localStorage.removeItem("photoSeach")} padding = "14px" background="red">Clear Search History</Button>
+        </div>
         {isFocus ? <Search.History/> : null}
         </InputDiv>
 }

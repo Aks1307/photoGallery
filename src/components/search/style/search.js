@@ -22,10 +22,9 @@ color:black;
 
 export const Button = styled.button`
 border: none;
-padding : ${(props) => props.padding ? props.padding : '10px'};
+padding : ${(props) => props.padding ? props.padding : '14px'};
 background :  ${(props) => props.background ? props.background : '#fff'}; 
 cursor:pointer;
-border-radius:5px;
 margin : 3px;
 color : white;
 `
@@ -42,5 +41,8 @@ top:40px;
 `
 
 export const InputDiv =  styled.div`
-
+display : flex;
+@media(max-width:1000px){
+    flex-direction:column;
+}
 `

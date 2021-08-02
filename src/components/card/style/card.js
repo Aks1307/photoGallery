@@ -11,6 +11,10 @@ export const Image = styled.img`
   height: 400px;
   width: 400px;
   object-fit: cover;
+  @media(max-width:600px){
+      height :300px;
+      width : 300px;
+  }
 `;
 
 export const Modal = styled.div`
